@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="orange">
+    <h1>
+        <center>
+            <hr width="900" size="18" color="black">
+            Celsius to Fahrenheit converter & vice versa
+            <hr width="900" size="18" color="black">
+        </center>
+    </h1>
+    <h2>
+        Select Case 1 for Celsius to Fahrenheit converter
+        <br>
+        Select Case 2 for Fahrenheit to Celsius Converter
+    </h2>
+    <script>
+        var a,b,c,ch,d,e,f;
+        alert("1 for celsius to fahrenheit conveter");
+        alert("2 for fahrenheit to celsius converter");
+        ch=Number(prompt("Enter case:"));
+        switch(ch){
+            case 1:
+        a=Number(prompt("Enter celsius degree:"));
+        b=(9*a)+(32*5);
+        c=b/5;
+        document.write("Celsius degree:"+a);
+        document.write("<br>After converting the celsius degree in Fahrenheit:"+c);
+        break;
+
+        case 2:
+        d=Number(prompt("Enter Fahrenheit value:"));
+        e=(5*d)-(32*5);
+        f=e/9;
+        document.write("Fahrenheit degree:"+d);
+        document.write("<br>After converting the Fahrenheit value in celsius degree:"+f);
+        break;
+
+        default:
+            document.write("<br>You entered a wrong case.Please enter 1 or 2.");
+            break;
+            
+        }
+    </script>
+</body>
+</html>
